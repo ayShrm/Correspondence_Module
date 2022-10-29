@@ -23,7 +23,7 @@ public class EmailServiceImpl implements EmailService {
 		String smtpHost = "gmail.com"; // replace this with a valid host
 		int smtpPort = 587; // replace this with a valid port
 
-		String sender = "aysh3256@gmail.com"; // replace this with a valid sender email address
+		String sender = "admin@gmail.com"; // replace this with a valid sender email address
 
 		Properties properties = new Properties();
 		properties.put("mail.smtp.host", smtpHost);
