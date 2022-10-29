@@ -1,0 +1,34 @@
+spring:
+  boot:
+    admin:
+      mail:
+        from: ${spring.mail.username}
+        to: ${spring.mail.username}, test@gmail.com
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/hisdb
+    username: root
+  driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: ""
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        transport:
+          protocol: smtp
+    protocol: smtp
+    username: ""
+  main:
+    banner-mode: 'off'
